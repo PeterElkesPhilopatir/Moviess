@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="399dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="    Large Text"
+        android:id="@+id/detailTitle"
+        android:background="@color/myColor"
+        android:height="50dp"
+        android:foregroundGravity="center_vertical|fill_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailPoster"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="200dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginBottom="94dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/releaseDate"
+        android:layout_alignStart="@+id/releaseDate"
+        android:id="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/releaseDate"
+        android:text="releaseDate"
+        android:layout_marginRight="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_alignTop="@+id/detailPoster"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/rating"
+        android:text="rating"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/releaseDate"
+        android:layout_alignLeft="@+id/releaseDate"
+        android:layout_alignStart="@+id/releaseDate" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/detailDescription"
+        android:text="@string/app_name"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/fav"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark As Favourite"
+        android:id="@+id/fav"
+        android:background="@color/myColor"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_alignRight="@+id/releaseDate"
+        android:layout_alignEnd="@+id/releaseDate" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/trailersList"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See Reviews"
+        android:background="@color/myColor"
+        android:id="@+id/reviews"
+        android:layout_below="@+id/rating"
+        android:layout_alignLeft="@+id/rating"
+        android:layout_alignStart="@+id/rating"
+        android:layout_marginTop="29dp" />
+
+
+</RelativeLayout>
